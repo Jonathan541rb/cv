@@ -1,0 +1,210 @@
+
+:root{
+    font-size: 15px;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    --color-1: rgb(92, 21, 21);
+    --color-2: rgb(92, 21, 21);
+    --color-3: rgb(92, 21, 21);
+    --color-pagina: white;
+    --color-texto: black;
+    color: var(--color-texto);
+}
+
+body{
+    background-color: var(--color-2);
+    justify-content: center;
+    color: var(--color-texto);
+    margin: 0;
+}
+
+#pagina{
+    display: flexbox;
+    justify-content:center;
+    margin: auto;
+    min-width: 650px;
+    max-width: 65%;
+    padding: 30px;
+    background-color: var(--color-pagina);
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05em;
+}
+
+.encabezado{
+    height: 200px;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center ;
+    padding: 0.4rem 1rem;
+    background-color: var(--color-2);
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+
+}
+nav ul li a{
+    color: var(--color-pagina);
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 1rem;
+}
+
+#modoVis{
+    padding: 1rem;
+}
+#modoVis:hover, nav ul li a:hover{
+    cursor: pointer;
+    background-color: var(--color-3);
+    border-radius: 6px;
+}
+
+
+#perfil{
+    float: left;
+    min-width: 128px;
+    max-width: 140px;
+    width: 20%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+
+#foto{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 128px;
+    min-height: 128px;
+    width: 99%;
+    height: 99%;
+
+
+
+}
+
+#redes{
+    float:right;
+    width: 80px;
+    height: 200px;
+    display: flex;
+    flex-direction:row;
+    justify-content:last baseline;
+}
+
+
+.redesContacto{
+    margin: 16px 0px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.imgRedes {
+    height: 40px;
+}
+.imgRedes:hover {
+    transform: scale(1.25);
+    transition: 0.5s ease 0.05s;
+}
+
+
+#nombreTitulo{
+    float: left;
+    flex-direction: column;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.45rem;
+}
+
+
+
+.iconoTitulo {
+    float: left;
+    flex-direction: row;
+    margin-top: 19px;
+    margin-left: 15px;
+    font-size: 1.4rem;
+}
+
+.tematica{
+    clear: both;
+    border-top: 3px solid var(--color-3);
+    padding-bottom: 10px;
+}
+
+.datos {
+    padding-left: 40px;
+}
+
+.resaltar {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+}
+
+.fleVisibilidad {
+    margin-top: 18px;
+    margin-right: 45px;
+    float: right;
+    padding: 7px;
+    border-radius: 3px;
+}
+.fleVisibilidad:hover{
+    background-color: var(--color-2);
+    color: var(--color-texto);
+    cursor: pointer;
+}
+
+.titulo {
+    padding-bottom: 4em;
+    border-bottom: 1px solid var(--color-3);
+}
+.titulo h3 {
+    float: left;
+    display: flex;
+    margin: 0px;
+    padding: 1em;
+    font-size: 1.27em;
+}
+
+[id^=mostrar] {
+    display: none;
+}
+
+
+#btnToTop{
+    display: none;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+
+    padding: 20px 8px;
+    background-color: var(--color-1);
+    color: var(--color-3);
+    border-radius: 30%;
+    height: 5rem;
+    width: 5rem;
+    font-size: 5rem;
+    text-align: center;
+    vertical-align:text-bottom;
+    cursor: pointer;
+}
+
+#btnToTop:hover{
+    transform: scale(1.25);
+    transition: 0.5s ease 0.05s;
+}

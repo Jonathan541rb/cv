@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CV</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+    <script src="https://kit.fontawesome.com/fb219c69e3.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imagenes/icono de pagina.png">
+ 
+</head>
+
+<body>
+    <script src="js/accion.js"></script>
+    <div id="pagina">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#titInfoPersonal">DATOS PERSONALES</a></li>
+                    <li><a href="#titEstudios">FORMACIÓN ACADÉMICA</a></li>
+                    <li><a href="#titExpLab">EXPERIENCIA LABORAL</a></li>
+                    <li><a href="#titCompetencias">HABILIDADES</a></li>
+                    <li><a href="#titContactar">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <section id="encabezado" class="encabezado">
+                <article id="nombreTitulo">
+                    <h1 class="nombreTitulo" id="nombrePersona"></h1>
+                    <h1 class="nombreTitulo" id="apellidoPersona"></h1>
+                </article>
+                <article id="perfil">
+                    <figure id="foto">
+                        <img src="" alt="Foto de perfil" id="fotoPerfil" />
+                    </figure>
+                </article>
+            </section>
+        </header>
+
+        <main id="cuerpo">
+            <section id="info" class="tematica">
+                <article id="titInfoPersonal" class="titulo">
+                    <i class="fa-solid fa-address-card iconoTitulo"></i>
+                    <h3>DATOS PERSONALES</h3>
+                    <div class="fleVisibilidad" id="mostrarInfo">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarInfo">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article class="datos">
+                    <p><span class="resaltar">Fecha de nacimiento:</span> <span id="nacimientoPersona"></span></p>
+                    <p><span class="resaltar">Identificacion:</span> <span id="identificacionPersona"></span></p>
+                    <p><span class="resaltar">Residencia:</span> <span id="residenciaPersona"></span></p>
+                    <p><span class="resaltar">Calle:</span> <span id="callePersona"></span></p>
+                    <p><span class="resaltar">Código postal:</span> <span id="codPostPersona"></p>
+                </article>
+            </section>
+
+            <section id="estudios" class="tematica">
+                <article id="titEstudios" class="titulo">
+                    <i class="fa-solid fa-graduation-cap iconoTitulo"></i>
+                    <h3>FORMACIÓN ACADÉMICA</h3>
+                    <div class="fleVisibilidad" id="mostrarEstudios">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarEstudios">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article class="datos">
+                    <ul>
+                        <li>
+                            <p><span class="resaltar">Colegio Normal "Tomás Godoy Cruz" N° 9-002:</span> Secundario completo</p>
+                        </li>
+                        <li>
+                            <p><span class="resaltar">Escuela "Provincia de San Juan" N° 1-173:</span> Primario completo</p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="expLab" class="tematica">
+                <article id="titExpLab" class="titulo">
+                    <i class="fa-solid fa-briefcase iconoTitulo"></i>
+                    <h3>EXPERIENCIA LABORAL</h3>
+                    <div class="fleVisibilidad" id="mostrarExpLab">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarExpLab">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article>
+                    <ul class="datos">
+                        <li>
+                            <p><span class="resaltar">Abril 2013 - Presente:</span> Operador de CCTV</p>
+                        </li>
+                        <li>
+                            <p><span class="resaltar">Junio 2012 - Abril 2013:</span> Recepcionista de hotel</p>
+                        </li>
+                        <li>
+                            <p><span class="resaltar">Febrero 2008 - Junio 2012:</span> Telemárketer</p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="competencias" class="tematica">
+                <article id="titCompetencias" class="titulo">
+                    <i class="fa-solid fa-laptop-code iconoTitulo"></i>
+                    <h3>HABILIDADES</h3>
+                    <div class="fleVisibilidad" id="mostrarComp">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarComp">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <article class="datos">
+                    <p>Inglés: <progress class="barraProgreso" max="100" value="70"></progress></p>
+                    <p>Java: <progress class="barraProgreso" max="100" value="50"></progress></p>
+                    <p>JS: <progress class="barraProgreso" max="100" value="25"></progress></p>
+                    <p>CSS: <progress class="barraProgreso" max="100" value="35"></progress></p>
+                    <p>Word: <progress class="barraProgreso" max="100" value="60"></progress></p>
+                    <p>Excel: <progress class="barraProgreso" max="100" value="40"></progress></p>
+                    <p>PowerPoint: <progress class="barraProgreso" max="100" value="30"></progress></p>
+                </article>
+            </section>   
+            <section id="contactar" class="tematica">
+                <article  id="titContactar" class="titulo">
+                    <i class="fa-solid fa-envelope iconoTitulo"></i>
+                    <h3>CONTACTO</h3>
+                    <div class="fleVisibilidad" id="mostrarContactar">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="fleVisibilidad" id="ocultarContactar">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                </article>
+                <section id="info" class="tematica">
+                <article class="datos">
+                    <p><span class="resaltar">Correo electrónico: jonathan541rb@gmail.com</span>
+                    <p><span class="resaltar">Teléfono móvil:2616331410</span></p>
+                    <p><span class="resaltar">Teléfono fijo:4511118</span></p>
+                </article>
+                    <figure title="Perfil de Github" class="resaltar">
+                        <a href="https://github.com/" target="_blank">
+                            <img id="img-github" src="imagenes/github/github-mark.svg" class="imgRedes"
+                                alt="Gitgub logo">  
+                    </figure>
+                    <figure title="Perfil de LinkedIn" class="resaltar">
+                        <a href="https://www.linkedin.com/" target="">
+                            <img id="img-lin" src="imagenes/linked in/In-Blue-128.png" class="imgRedes"
+                                alt="LinkedIn logo">
+                            </section>
+
+                    </figure>
+                </article>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
